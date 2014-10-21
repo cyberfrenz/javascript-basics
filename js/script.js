@@ -34,3 +34,21 @@ elen.src = 'img/cat.jpg';
 elen.alt = 'picture of something that i don';
 
 document.body.appendChild(elen);
+
+function onPuppyClick() {
+
+ document.getElementById('bark').play());
+
+} //onPuppyClick()
+
+//selecting the puppy-pic element
+var pup = document.getElementById('puppy-pic');
+
+if (pup.addEventListener) {
+
+ pup.addEventListener('click', onPuppyClick);
+
+}{ else if (pup.attachEvent)
+
+ pup.attachEvent('click', onPuppyClick);
+}
